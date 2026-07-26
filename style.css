@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+    body{
+    
+    font-family:Poppins;
+    background:linear-gradient(135deg,#ffd6e7,#fff5f8);
+    text-align:center;
+    overflow-x:hidden;
+    color:#333;
+    
+    }
+    
+    #loader{
+    
+    position:fixed;
+    background:white;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    z-index:999;
+    
+    }
+    
+    .hero{
+    
+    padding:80px 20px;
+    
+    }
+    
+    .hero h1{
+    
+    font-size:60px;
+    font-family:Pacifico;
+    color:#ff2d75;
+    
+    }
+    
+    .hero p{
+    
+    margin:20px auto;
+    max-width:700px;
+    font-size:20px;
+    
+    }
+    
+    button{
+    
+    padding:15px 35px;
+    font-size:18px;
+    border:none;
+    background:#ff2d75;
+    color:white;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.3s;
+    
+    }
+    
+    button:hover{
+    
+    transform:scale(1.05);
+    
+    }
+    
+    section{
+    
+    padding:60px 20px;
+    
+    }
+    
+    .gallery{
+    
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+    
+    }
+    
+    .gallery img{
+    
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    transition:.4s;
+    
+    }
+    
+    .gallery img:hover{
+    
+    transform:scale(1.05);
+    
+    }
+    
+    .message{
+    
+    max-width:900px;
+    margin:auto;
+    font-size:22px;
+    line-height:1.8;
+    
+    }
+    
+    .cards{
+    
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+    
+    }
+    
+    .card{
+    
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    font-size:22px;
+    
+    }
+    
+    #counter{
+    
+    font-size:45px;
+    color:#ff2d75;
+    
+    }
+    
+    #hearts{
+    
+    position:fixed;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    
+    }
+    
+    .heart{
+    
+    position:absolute;
+    color:#ff2d75;
+    animation:float 8s linear infinite;
+    font-size:25px;
+    
+    }
+    
+    @keyframes float{
+    
+    0%{
+    transform:translateY(100vh);
+    opacity:1;
+    }
+    
+    100%{
+    transform:translateY(-120vh);
+    opacity:0;
+    }
+    
+    }
+    
+    canvas{
+    
+    position:fixed;
+    left:0;
+    top:0;
+    pointer-events:none;
+    
+    }
